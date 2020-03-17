@@ -1,0 +1,84 @@
+/*Codigo de estilo en css3 estilos en cascada*/
+
+/* body margin, padding y estilo de border */
+*, body{
+    /*  */
+    padding: 0 !important;
+    margin: 0 !important;
+    /* compatibilidad */
+    box-sizing: border-box;
+    /* edge - safari */
+    -webkit-box-sizing: border-box;
+    /*mozilla - firefox*/
+    -moz-box-sizing: border-box;
+    /*opera*/
+    -o-box-sizing: border-box;
+}
+/*menu lateral*/
+/*espacio container*/
+.espacio{
+    background: blue;
+    height:5000px !important;
+}
+/*estilo h1*/
+.estilosh1menu{
+    color: red;
+    font-size: 35px !important;
+    font-weight: bold !important;
+}
+/*sidemenu*/
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #151719;
+    left: -200px;
+    transition: all 500ms linear;
+    z-index: 1 !important;
+  }
+  
+  #sidebar.active {
+    left: 0px;
+  }
+  
+  #sidebar ul li {
+    color: rgba(230, 230, 230, .9);
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
+    text-align: center;
+  }
+  
+  .iconomenu {
+      padding: 2% !important;
+    display: block !important;
+    margin: 0 auto !important; 
+  }
+  
+  #sidebar .toggle-btn {
+    position: absolute;
+    left: 230px;
+    top: 20px;
+    cursor: pointer;
+  }
+  
+  #sidebar .toggle-btn span {
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 3px solid #000;
+  }
+
+
+  .navbar{
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    transition: .5s;  
+  }
+
+
+
